@@ -16,5 +16,6 @@ def registration(request):
     else:
        # form=UserCreationForm()
          form=UserRegisterForms()
+    # request.session.set_expiry(60)
     return render(request,'users/register.html',{'form':form})
 
